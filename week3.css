@@ -1,0 +1,448 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+.container{
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.hambergur{
+    padding-top: 10px;
+    display: none;
+}
+.header-img{
+    width: 20%;
+    background-image: 
+    url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: block;
+}
+.menu{
+    /*
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    */
+    display: flex;
+    align-items: center;
+    margin: 0px 60px 0px auto;
+    justify-content:space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.menu a{
+    display: block;
+    color:#3F5D45 ;
+    text-decoration: none;
+
+
+
+    line-height: 22px;
+    padding: 5px 30px;
+}
+.shopping-cart{
+    padding: 5px;
+}
+
+
+.banner{
+    margin-bottom: 60px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.choice{
+    width: 33%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: bolder;
+}
+.choice h3{
+    background: #3F5D45;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.choice a{
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #3F5D45;
+    border: 1px solid #EAF0ED;
+}
+.choice a:hover{
+    background: #EAF0ED;
+}
+.subchoice{
+   background: #EAF0ED;
+}
+
+
+
+.product{
+    width: 66%;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+.list li{
+    position: relative;
+    margin-bottom: 15px;
+}
+.featured{
+    position: absolute;
+    top: 0px;
+    left:20px;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    writing-mode: vertical-lr;
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+.heart{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.productname{
+    display: flex;
+    border-left:1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+}
+.productname h2{
+    line-height: 24px;
+    color: #3F5D45;
+    padding: 15px;
+    width: 50%;
+
+}
+
+.productname span{
+    width: 50%;
+    line-height: 24px;
+    color: #3F5D45;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    border-left:1px solid #EAF0ED;
+    font-weight: bold;
+}
+
+.cart{
+    display: block;
+    background:#EAF0ED;
+    color: #3F5D45;
+    text-decoration: none;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: bold; 
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.cart:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.page{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* page*/
+
+.pageindex{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.pageindex li{
+    border: 1px solid #EAF0ED;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+.subindex{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.index{
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color:#3F5D45;
+}
+.index:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.arrow{
+    display: block;
+    padding: 20px;
+}
+
+.arrow:hover{
+    background: #EAF0ED;
+}
+
+/* footer */
+.subscribe{
+    margin: 0 auto;
+    background-color: #3F5D45;
+    display: flex;
+    justify-content: center;
+}
+
+.subscripemail{
+    display: flex;
+    align-items: center;
+    color: #EAF0ED;
+    padding: 38px 122px;
+    font-size: 24px;
+}
+.subscripemail img{
+    height: 40px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.subscripeinput{
+    display: flex;
+    position: relative;
+    height: 60px;
+    text-align: center;
+    padding: 50px 0;
+}
+.subscripeinput input{
+    display: block;
+    border: none;
+    background-color: #EAF0ED;
+    padding-left: 60px;
+    font-size: 20px;
+    
+}
+.subscripeinput button{
+    width: 60px;
+    border: none;
+    background-color: #FFE180;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.mailicon{
+    position: absolute;
+    color: #000000;
+    top:70px;
+    left: 30px;
+ 
+}
+
+
+
+
+
+.footer{
+    margin: 0 auto;
+    background-color: #EAF0ED;
+}
+.contact{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.address li{
+    font-size: 16px;
+    line-height: 24px;
+    color: #3F5D45;
+}
+.dessert p{
+    font-size: 24px;
+    writing-mode: vertical-rl;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    text-orientation: upright;
+    color: #3F5D45;
+}
+.dessert span{
+    margin-top: 10px;
+}
+
+.footerbot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px ;
+
+}
+.footer .icon{
+    display: flex;
+}
+.footer .icon img{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+.footerbot .copyRight{
+    font-size: 16px;
+    color:#3F5D45;
+}
+
+
+
+@media (max-width: 767px){
+    .container{
+        max-width: 767px;
+    }
+    .banner{
+        margin-bottom: 0;
+    }
+    .choice{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .product{
+        width: 100%;
+    }
+    .list{
+        justify-content: space-around;
+    }
+    .pageindex{
+        justify-content: center;
+    }
+    .subscripemail{
+        flex-direction: column;
+    }
+
+    .dessert{
+        display: none;
+    }
+    .hambergur{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-img{
+        display: block;
+    }
+    .header{
+        justify-content: space-around;
+    }
+    .header-img{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-lg-dark.svg);
+    }
+    
+    .address img{
+        margin-bottom: 40px;
+    }
+    .subscribe{
+        flex-direction: column;
+    }
+    .subscripeinput{
+        margin: 0 auto;
+    }
+    .footerbot{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

@@ -1,0 +1,79 @@
+.container{
+    margin: 0 auto;
+    max-width: 940px;
+    @media (max-width: 767px){
+        max-width: 767px;
+    }
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    @media (max-width: 767px){
+        justify-content: space-around;
+    }
+    &-img{
+        width: 20%;
+        background-image: 
+        url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        display: block;
+        @media (max-width: 767px){
+            background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-lg-dark.svg);
+        }
+        
+    }
+}
+.navbar-toggler{
+    padding-top: 10px;
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    @media (max-width: 767px){
+        display: block;
+    }
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    margin: 0px 60px 0px auto;
+    justify-content:space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    a{
+        display: block;
+        color:#3F5D45 ;
+        text-decoration: none;
+        line-height: 22px;
+        padding: 5px 30px;
+    }
+    @media (max-width: 767px){
+        display: none;
+        &-img{
+            display: block;
+        }
+    }
+    
+}
+
+.shopping-cart{
+    padding: 5px;
+}
+
+
